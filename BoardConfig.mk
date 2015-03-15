@@ -7,8 +7,7 @@ TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := hltevzw
 
 # Platform
-TARGET_BOARD_PLATFORM := msm8660
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
+TARGET_BOARD_PLATFORM := msm8960
 
 # Flags
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
@@ -74,4 +73,5 @@ TW_CRYPTO_KEY_LOC := "footer"
 TW_NO_EXFAT_FUSE := true
 TW_NO_EXFAT := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
-#TW_TARGET_USES_QCOM_BSP := true
+TW_DISABLE_TTF := true
+TW_MTP_DEVICE := /dev/usb_mtp_gadget
